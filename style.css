@@ -16,6 +16,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    background: #f7fff7;
+    -webkit-box-shadow: 0px 4px 5px -1px rgba(184, 184, 184, 1);
+    -moz-box-shadow: 0px 4px 5px -1px rgba(184, 184, 184, 1);
+    box-shadow: 0px 4px 5px -1px rgba(184, 184, 184, 1);
 }
 
 .h1-title {
@@ -25,10 +31,13 @@ body {
     margin-top: 10px;
     border-left: 3px solid #3d3d3d;
     border-right: 3px solid #3d3d3d;
+    margin-bottom: 10px;
 }
-.responsive-years{
+
+.responsive-years {
     display: none;
 }
+
 
 .h3-cartitle {
     font-size: 24px;
@@ -61,6 +70,17 @@ section {
     box-shadow: 7px 6px 22px -9px rgba(0, 0, 0, 0.52);
 }
 
+.cards-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.doble-container {
+    display: flex;
+}
+
 .car-card {
     width: 100%;
 }
@@ -72,34 +92,66 @@ section {
     background-color: #e8f1e8;
     padding: 15px;
     border-radius: 5px;
-    -webkit-box-shadow: 6px 7px 15px -6px rgba(194,194,194,1);
--moz-box-shadow: 6px 7px 15px -6px rgba(194,194,194,1);
-box-shadow: 6px 7px 15px -6px rgba(194,194,194,1);
+    -webkit-box-shadow: 6px 7px 15px -6px rgba(194, 194, 194, 1);
+    -moz-box-shadow: 6px 7px 15px -6px rgba(194, 194, 194, 1);
+    box-shadow: 6px 7px 15px -6px rgba(194, 194, 194, 1);
 }
-.p-carinfo{
+
+.p-carinfo {
     font-size: 20px;
 }
-@media (max-width:1024px){
-    section{
+
+#margin-navbar {
+    padding-top: 129px;
+}
+
+@media (max-width:1024px) {
+    section {
         width: 85%;
     }
-}
-@media (max-width:768px){
-    section{
-        width:100%;
+    .cards-container{
+        width: 100%;
     }
-    .h1-title{
-        font-size: 28px;
-        width:90%;
+    .car-info{
+        margin-bottom: 50px;
+    }
+    .doble-container{
+        display: block;
+    }
+
+}
+
+@media (max-width:768px) {
+    .navbar{
+        position: relative;
+        box-shadow: ;
+    }
+    section {
+        width: 100%;
+    }
+    .p-text{
+        font-size:22px;
+    }
+
+    .h1-title {
+        font-size: 25px;
+        width: 90%;
         text-align: center;
     }
-    .navbar{
+
+    .navbar {
         flex-direction: column;
     }
-    .responsive-years{
-        display:block;
+
+    .responsive-years {
+        display: block;
     }
-    .h2-year{
-        display:none;
+
+    .h2-year {
+        display: none;
+    }
+
+    #margin-navbar {
+        padding-top: 10px;
     }
 }
