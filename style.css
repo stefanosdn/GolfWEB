@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+    background-color: #f7fff7;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.h1-title {
+    color: #3d3d3d;
+    font-size: 36px;
+    padding: 20px 20px;
+    margin-top: 10px;
+    border-left: 3px solid #3d3d3d;
+    border-right: 3px solid #3d3d3d;
+}
+.responsive-years{
+    display: none;
+}
+
+.h3-cartitle {
+    font-size: 24px;
+    color: #3d3d3d;
+}
+
+section {
+    width: 60%;
+    margin: auto;
+}
+
+.p-text {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    width: 80%;
+    margin: auto;
+}
+
+.wide-img {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.large-image {
+    width: 90%;
+    -webkit-box-shadow: 7px 6px 22px -9px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 7px 6px 22px -9px rgba(0, 0, 0, 0.52);
+    box-shadow: 7px 6px 22px -9px rgba(0, 0, 0, 0.52);
+}
+
+.car-card {
+    width: 100%;
+}
+
+.car-info {
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    background-color: #e8f1e8;
+    padding: 15px;
+    border-radius: 5px;
+    -webkit-box-shadow: 6px 7px 15px -6px rgba(194,194,194,1);
+-moz-box-shadow: 6px 7px 15px -6px rgba(194,194,194,1);
+box-shadow: 6px 7px 15px -6px rgba(194,194,194,1);
+}
+.p-carinfo{
+    font-size: 20px;
+}
+@media (max-width:1024px){
+    section{
+        width: 85%;
+    }
+}
+@media (max-width:768px){
+    section{
+        width:100%;
+    }
+    .h1-title{
+        font-size: 28px;
+        width:90%;
+        text-align: center;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .responsive-years{
+        display:block;
+    }
+    .h2-year{
+        display:none;
+    }
+}
