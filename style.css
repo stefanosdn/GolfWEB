@@ -158,7 +158,7 @@ em{
     }
 
     .responsive-years {
-        display: block;
+        display: none;
     }
 
     .h2-year {
